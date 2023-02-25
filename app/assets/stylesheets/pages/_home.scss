@@ -3,3 +3,63 @@
 body {
   background: rgb(255, 255, 255);
 }
+
+
+.list {
+  width:1000px;
+  padding: 16px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  background-image: url('paul-green-mln2ExJIkfc-unsplash.jpg');
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-category {
+  background-image: url('jakob-owens-CiUR8zISX60-unsplash.jpg');
+  background: linear-gradient (rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-category a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.container h1 {
+  width:1000px;
+  padding: 16px;
+  margin: 8px auto;
+}
+
+.list p {
+  text-align: end;
+  margin: 0;
+}

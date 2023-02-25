@@ -1,0 +1,67 @@
+.banner_movie {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  background-image: url('rob-laughter-WW1jsInXgwM-unsplash.jpg');
+}
+
+.banner_movie h1 {
+  margin: 0 auto;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-trip {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-trip > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-trip h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-trip p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+
+.card-trip .card-trip-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin: 40px 0;
+  width:1000px;
+}
+
+.container_movie {
+  width:1000px;
+  margin: 0 auto;
+}
+
+.movie_poster {
+  object-position: top;
+  height: 90%;
+}

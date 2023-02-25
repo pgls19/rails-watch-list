@@ -1,13 +1,21 @@
-<h1><%= @list.name%></h1>
+<div class="banner_movie">
+  <div class="container">
+    <h1><%= @list.name%></h1>
+  </div>
+</div>
 
-<ul>
-<% @list.movies.each do |movie| %>
-  <li><%= movie.title %></li>
-<% end %>
-</ul>
-
-
-
-<%= link_to "Add a new movie", new_list_bookmark_path(@list) %>
-<br>
-<%= link_to "Back", lists_path %>
+<div class="container_movie">
+    <div class="grid">
+      <% @list.movies.each do |movie| %>
+          <div class="card-trip">
+            <%= image_tag movie.poster_url, alt: movie.title, class: "movie_poster" %>
+              <div class="card-trip-infos">
+                <%= movie.title %><%= link_to "delete", bookmark_path(@list.bookmarks.ids), data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to remove #{movie.title} from your #{@list.name} list"} %>
+              </div>
+          </div>
+      <% end %>
+    </div>
+  <%= link_to "Add a new movie", new_list_bookmark_path(@list) %>
+  <br>
+  <%= link_to "Back", root_path %>
+</div>
